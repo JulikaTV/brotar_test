@@ -1,0 +1,91 @@
+@import "global.css";
+
+.container-topicos {    
+    padding: 32px;
+    border: 1px solid rgb(from var(--muted) r g b / 0.2);
+    border-radius: var(--radius);
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.container-topicos > h3{
+    align-self: flex-start;
+}
+
+.card-topico {
+    border: 1px solid rgb(from var(--muted) r g b / 0.1);
+    border-radius: var(--radius);
+    padding: 24px;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card-topico:hover {
+    border: 1px solid var(--muted);
+    background-color: var(--card-bg);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.card-texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card-texto-principal > p {
+    color: var(--muted);
+}
+
+.card-autor-info {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-autor-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: 6px;
+    font-size: 14px;
+    color: var(--white);
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--muted);
+}
