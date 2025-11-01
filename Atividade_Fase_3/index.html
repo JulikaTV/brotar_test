@@ -18,9 +18,13 @@
 <body>
 
   <!--Aqui começareio cabeçalho-->
+    <!-- Início do cabeçalho -->
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand text-success fw-bold fs-3" href="index.html">Brotar Digital</a>
+            <!-- LOGO: Substituído por uma imagem PNG (Lembre-se de trocar o 'src' pela URL do seu logo real) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo Brotar Digital" style="height: 100px;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,10 +34,21 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Programas</a>
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <!-- Item de menu "Programas" transformado em Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownProgramas">
+                            <li><a class="dropdown-item" href="#sementes-conhecimento">Sementes do Conhecimento</a></li>
+                            <li><a class="dropdown-item" href="#rede-raizes">Rede de Raízes</a></li>
+                            <li><a class="dropdown-item" href="#colheita-oportunidades">Colheita de Oportunidades</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#programas">Nossa Equipe</a>
+                        <a class="nav-link" href="#equipe">Nossa Equipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">Fale Conosco</a>
@@ -42,8 +57,8 @@
             </div>
         </div>
     </header>
+  <!-- Fim do cabeçalho -->
   <!--Aqui acaba o header-->
-
 <container-fluid p-4">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <!-- Indicadores (pontos na parte inferior) -->
@@ -117,20 +132,20 @@
                     <!-- Membro 1 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="https://picsum.photos/id/64/300/300" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
+                            <img src="#" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold text-success">Ana Silva</h5>
-                                <p class="card-text text-muted">CEO & Fundadora</p>
+                                <h5 class="card-title fw-bold text-success">Alfredo Hilário</h5>
+                                <p class="card-text text-muted">Dev Full Stack - Brotar Digital</p>
                             </div>
                         </div>
                     </div>
                     <!-- Membro 2 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="https://picsum.photos/id/65/300/300" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
+                            <img src="images/home/alvaro-team2.jpg" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold text-success">Bruno Costa</h5>
-                                <p class="card-text text-muted">Diretor de Operações</p>
+                                <h5 class="card-title fw-bold text-success">Álvaro Piza</h5>
+                                <p class="card-text text-muted">Desenvolvedor Full Stack - Brotar Digital</p>
                             </div>
                         </div>
                     </div>
@@ -139,8 +154,8 @@
                         <div class="card team-member-card h-100 shadow-sm">
                             <img src="https://picsum.photos/id/66/300/300" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold text-success">Carla Santos</h5>
-                                <p class="card-text text-muted">Chefe de Tecnologia</p>
+                                <h5 class="card-title fw-bold text-success">Julia</h5>
+                                <p class="card-text text-muted">CIO de Tecnologia</p>
                             </div>
                         </div>
                     </div>
@@ -149,18 +164,8 @@
                         <div class="card team-member-card h-100 shadow-sm">
                             <img src="https://picsum.photos/id/67/300/300" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold text-success">Diego Oliveira</h5>
+                                <h5 class="card-title fw-bold text-success">Gabriel Baseggio</h5>
                                 <p class="card-text text-muted">Coordenador de Programas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Membro 5 -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
-                        <div class="card team-member-card h-100 shadow-sm">
-                            <img src="https://picsum.photos/id/68/300/300" class="card-img-top mx-auto" alt="Foto de Membro da Equipe">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold text-success">Helena Ferreira</h5>
-                                <p class="card-text text-muted">Especialista em Sustentabilidade</p>
                             </div>
                         </div>
                     </div>
