@@ -1,30 +1,15 @@
-@import "global.css";
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f6fbfb;
-    margin: 0;
-    padding: 0;
-    color: #2a4d19;
-}
-  header {
-    background: white;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #015208;
 }
 
-nav a {
-    text-decoration: none;
-    color: green;
-    margin-left: 10px;
-    font-weight: 500;
-}
+/* Estilo para o logo na barra de navegação */
+.navbar-brand img {
+    height: 100px; /* Altura padrão para o logo na navbar */
+} 
 
-nav a:hover {
-    text-decoration: underline;
-}
+
 
 main {
     max-width: 10000;

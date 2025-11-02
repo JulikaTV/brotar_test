@@ -33,9 +33,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
                     <!-- Item de menu "Programas" transformado em Dropdown com emojis corrigidos -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,9 +43,6 @@
                             <li><a class="dropdown-item" href="rede_de_raizes/index.html">🌱 Rede de Raízes</a></li>
                             <li><a class="dropdown-item" href="colheita_de_oportunidades/index.html">💰 Colheita de Oportunidades</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#equipe">Nossa Equipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fale_conosco/index.html">Fale Conosco</a>
@@ -183,21 +177,27 @@
             </div>
         </section>
     </main>             
-
-    <footer class="footer-container">
-        <div class="container footer-info-container">
-            <div class="footer-info-logo">
-                <img class="footer-logo" src="/Atividade_Fase_3/assets/logo.png" alt="Logo da Brotar Digital">
-                <div class="footer-info">
-                    <h4>Brotar Digital</h4>
-                    <p>Cultivando o futuro da agricultura familiar.</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Brotar Digital. Todos os direitos reservados.</p>
+    <!-- Início do Rodapé Minimalista -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- Copyright dinâmico (opcional, requer JS) ou estático -->
+            <p class="mb-2 mb-md-0">&copy; <span id="currentYear">2025</span> Brotar Digital. Todos os direitos reservados.</p>
+            
+            <div class="social-links-footer d-flex">
+                <a href="https://facebook.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/BrotarDigital"  class="text-white-50 mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Adicione mais redes sociais conforme necessário -->
             </div>
         </div>
     </footer>
+    <!-- Fim do Rodapé Minimalista -->
 
+    <!-- Bootstrap JS Bundle com Popper (SEMPRE no final do body para otimizar carregamento) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Script para o ano dinâmico no rodapé (coloque abaixo do Bootstrap JS) -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
