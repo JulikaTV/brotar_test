@@ -1,1 +1,10 @@
-@import "global.css";
+/* Ajustes básicos de corpo */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #107800;
+}
+
+/* Estilo para o logo na barra de navegação */
+.navbar-brand img {
+    height: 50px; /* Altura padrão para o logo na navbar */
+}
