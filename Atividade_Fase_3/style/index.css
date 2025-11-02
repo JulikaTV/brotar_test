@@ -1,62 +1,38 @@
-/* Custom CSS for Brotar Digital - with Bootstrap 5 */
-
-/* Font Imports (as in previous version) */
+/* Ajustes básicos de corpo */
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f5;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
-    font-family: 'Montserrat', sans-serif;
+/* Estilo para o logo na barra de navegação */
+.navbar-brand img {
+    height: 50px; /* Altura padrão para o logo na navbar */
 }
 
-/* Hero Section Backgrounds */
-.hero-section {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900/?farm,agriculture,community,harvest') no-repeat center center/cover;
-    min-height: 70vh; /* Adjust height as needed */
+/* Carrossel de Imagens */
+.carousel-item {
+    height: 350px; /* Altura padrão para o carrossel */
+    background-color: #777; /* Cor de fundo caso a imagem não carregue */
 }
 
-.contact-hero-section {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900/?contact,support,handshake') no-repeat center center/cover;
-    min-height: 45vh; /* Slightly smaller hero for contact page */
+.carousel-item img {
+    height: 100%;       /* A imagem preenche a altura do seu container */
+    object-fit: cover;  /* Garante que a imagem cubra a área, cortando se necessário, mantendo proporção */
+    width: 100%;        /* Garante que a imagem ocupe toda a largura disponível */
+    display: block;     /* Remove espaçamento extra que navegadores podem adicionar a imagens */
 }
 
-/* Optional: Adjust navbar-brand font size if needed */
-.navbar-brand {
-    font-size: 1.8rem; /* Equivalent to fs-3 in Bootstrap, but ensures specific font */
-}
-
-/* Custom button hover effect for social links in footer (optional, Bootstrap utility `text-white` handles default) */
-.social-links a:hover {
-    color: var(--bs-success) !important; /* Use Bootstrap's success color */
-}
-
-/* Custom button hover effect for social links in contact info (optional) */
-.contact-info-wrapper .btn-secondary:hover {
-    background-color: var(--bs-success) !important;
-    border-color: var(--bs-success) !important;
-}
-
-/* Estilo para definir a altura do carrossel e garantir que a imagem cubra todo o espaço */
+/* Carrossel: Altura ainda mais compacta em dispositivos móveis */
+@media (max-width: 768px) {
     .carousel-item {
-            height: 350px; 
-            background-color: #777; /* Cor de fundo caso a imagem não carregue */
-        }
+        height: 250px;
+    }
+    .navbar-brand img {
+         height: 40px; /* Um pouco menor para mobile */
+    }
+}
 
-        .carousel-item img {
-            height: 100%;       /* A imagem preenche a altura do seu container */
-            object-fit: cover;  /* Garante que a imagem cubra a área, cortando se necessário, mantendo proporção */
-            width: 100%;        /* Garante que a imagem ocupe toda a largura disponível */
-            display: block;     /* Remove espaçamento extra que navegadores podem adicionar a imagens */
-        }
-
-        /* Opcional: Ajuste para telas menores - Altura ainda mais compacta em dispositivos móveis */
-        @media (max-width: 768px) {
-            .carousel-item {
-                height: 250px; /* Altura menor para dispositivos móveis */
-            }
-      
-
-            /* --- Estilos para a Seção da Equipe --- */
+/* Seção da Equipe */
 .team-member-card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -68,18 +44,37 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .team-member-card .card-img-top {
-    width: 150px;   /* Largura fixa para a imagem */
-    height: 150px;  /* Altura fixa para a imagem */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    border-radius: 50%; /* Torna a imagem circular */
-    margin: 1.5rem auto 1rem auto; /* Centraliza e adiciona margem */
-    border: 3px solid #28a745; /* Borda verde */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1.5rem auto 1rem auto;
+    border: 3px solid #28a745;
 }
 
-/* Custom column para 5 itens em uma linha em telas grandes (lg e acima) */
-@media (min-width: 992px) { /* lg breakpoint */
-    .col-lg-2-4 { /* 100% / 5 = 20% */
+/* Coluna customizada para 5 itens em uma linha em telas grandes (lg e acima) */
+@media (min-width: 992px) {
+    .col-lg-2-4 {
         flex: 0 0 auto;
-        width: 20%; 
+        width: 20%;
     }
 }
+
+.header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0%;
+
+}
+
+/*
+ * Se você tinha outros estilos personalizados no seu arquivo `style.css`,
+ * adicione-os aqui, abaixo dos estilos que já estavam no <head> HTML.
+ * Por exemplo:
+ */
+
+/*
+.some-other-class {
+    color: blue;
+}
+*/
