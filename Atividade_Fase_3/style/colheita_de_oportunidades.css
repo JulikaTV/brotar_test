@@ -1,5 +1,9 @@
 @import "global.css";
 
+.navbar-brand img {
+    height: 100px; /* Altura padrão para o logo na navbar */
+}
+
 .container {
     margin-top: 2rem;
 }
@@ -97,4 +101,8 @@
 .chamada-acao:hover {
     color: var(--secondary-color);
     transform: translateX(5px);
+}
+
+.year-bdigital {
+    color: #fff !important;
 }

@@ -1,5 +1,8 @@
 @import "global.css";
-
+/* Estilo para o logo na barra de navegação */
+.navbar-brand img {
+    height: 100px; /* Altura padrão para o logo na navbar */
+}
 .container-topicos {    
     padding: 32px;
     border: 1px solid rgb(from var(--muted) r g b / 0.2);
@@ -88,4 +91,8 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--muted);
+}
+
+.year-bdigital {
+    color: #fff !important;
 }

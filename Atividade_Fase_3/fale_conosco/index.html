@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brotar Digital - Cultivando o Futuro Sustentável</title>
-    
-    <!-- Bootstrap CSS (Primeiro) -->
+    <link rel="stylesheet" href="../style/colheita_de_oportunidades.css">
+    <title>Fale Conosco</title>
+        <!-- Bootstrap CSS (Primeiro) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <!-- Google Fonts (Depois do Bootstrap, para que o CSS personalizado possa sobrescrever) -->
@@ -16,17 +16,14 @@
     <!-- Font Awesome (Para ícones sociais) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0N4aoEPnRlTMwFxGFDk/Lw2yYJ0W0yR92F9+0IbbpB+Yw9+5qR5w+p2x5+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- Custom CSS (Último, para garantir que suas regras tenham prioridade e inclua os estilos específicos) -->
-    <link rel="stylesheet" href="../style/fale_conosco.css">
-
 </head>
-
 <body>
-    <!-- Início do cabeçalho -->
-    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
+<!-- Início do cabeçalho -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="Atividade_Fase_3/index.html">
-                <img src="images/logo.png" alt="Logo Brotar Digital" height="100px" loading="lazy">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Logo Brotar Digital" height="100%" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,27 +31,28 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link" href="../index.html#sobre">Sobre</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html#equipe">Nossa Equipe</a>
                     </li>
                     <!-- Item de menu "Programas" transformado em Dropdown com emojis corrigidos -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="../sementes_do_conhecimento/index.html" id="navbarDropdownProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownProgramas">
-                            <li><a class="dropdown-item" href="sementes_do_conhecimento/index.html">📚 Sementes do Conhecimento</a></li>
-                            <li><a class="dropdown-item" href="rede_de_raizes/index.html">🌱 Rede de Raízes</a></li>
-                            <li><a class="dropdown-item" href="colheita_de_oportunidades/index.html">💰 Colheita de Oportunidades</a></li>
+                            <li><a class="dropdown-item" href="../sementes_do_conhecimento/index.html">📚 Sementes do Conhecimento</a></li>
+                            <li><a class="dropdown-item" href="../rede_de_raizes/index.html">🌱 Rede de Raízes</a></li>
+                            <li><a class="dropdown-item" href="../colheita_de_oportunidades/index.html">💰 <b>Colheita de Oportunidades</b></a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#equipe">Nossa Equipe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fale_conosco/index.html">Fale Conosco</a>
+                        <a class="nav-link" href="../fale_conosco/index.html"><b>Fale Conosco</b></a>
                     </li>
                 </ul>
             </div>
@@ -62,66 +60,41 @@
     </header>
     <!-- Fim do cabeçalho -->
 
-    <!-- Principal conteúdo da página -->
-   <container class="my-5">
-     <h2 class="mb-4 text-center">Entre em Contato</h2>
-        
-        <!-- Alerta de Sucesso (inicialmente oculto) -->
-        <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
-            Mensagem enviada com sucesso! Agradecemos o seu contato.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+    <!-- Conteúdo principal -->
+    <main>
 
-        <form id="contactForm">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nome Completo</label>
-                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+        <!-- Título e subtítulo -->
+        <section class="container">
+            <div class="header">
+                <h1>Fale Conosco</h1>
+                <p>Se você se interessou por algum de nossos produtos ou ainda tem alguma dúvida, entre em contato com nossos especialistas através do formulário abaixo.</p>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Endereço de E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+    
+            <!-- Quadro de oportunidades -->
+            <div class="container">
+                    <div class="cards-grid">
+                        
+                        <!-- Tópicos de Oportunidades -->
+                        <div class="cards-titles">
+                        
+                       <!-- Cartoes de oportunidades -->
+                        <div class="cards">
+
+                            <!-- Cartao de oportunidades -->
+                            <div class="card">
+                                <div class="card-topicos">Central de Atendimento</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="subject" class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="subject" placeholder="Assunto da mensagem" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Sua Mensagem</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
-            </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Inclua o JavaScript do Bootstrap 5 (bundle com Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário (que recarregaria a página)
-
-            // Esconde qualquer alerta anterior
-            document.getElementById('successAlert').classList.add('d-none');
-
-            // Aqui você faria o envio real do formulário (ex: via AJAX)
-            // Para este exemplo, apenas simulamos um envio bem-sucedido.
-            
-            // Exibe o alerta de sucesso
-            document.getElementById('successAlert').classList.remove('d-none');
-
-            // Opcional: Limpa os campos do formulário após o envio
-            document.getElementById('contactForm').reset();
-        });
-    </script>
-</container>
-
+        </section>
+    </main>             
     <!-- Início do Rodapé Minimalista -->
     <footer class="bg-dark text-white py-4">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <!-- Copyright dinâmico (opcional, requer JS) ou estático -->
-            <p class="mb-2 mb-md-0">&copy; <span id="currentYear">2025</span> Brotar Digital. Todos os direitos reservados.</p>
-            
+              <div class="year-bdigital">2025 Brotar Digital. Todos os direitos reservados.</div>      
             <div class="social-links-footer d-flex">
                 <a href="https://facebook.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://instagram.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
