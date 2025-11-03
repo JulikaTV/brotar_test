@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brotar Digital - Cultivando o Futuro Sustentável</title>
-    
+
     <!-- Bootstrap CSS (Primeiro) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <!-- Google Fonts (Depois do Bootstrap, para que o CSS personalizado possa sobrescrever) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome (Para ícones sociais) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0N4aoEPnRlTMwFxGFDk/Lw2yYJ0W0yR92F9+0IbbpB+Yw9+5qR5w+p2x5+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     <!-- Custom CSS (Último, para garantir que suas regras tenham prioridade e inclua os estilos específicos) -->
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="./style/index.css">
 
 </head>
 
@@ -26,9 +22,10 @@
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo Brotar Digital" height="100px" loading="lazy">
+                <img src="./images/logo.png" alt="Logo Brotar Digital" height="100px" loading="lazy">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -39,18 +36,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
-                                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#equipe">Nossa Equipe</a>
                     </li>
                     <!-- Item de menu "Programas" transformado em Dropdown com emojis corrigidos -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownProgramas" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Programas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownProgramas">
-                            <li><a class="dropdown-item" href="sementes_do_conhecimento/index.html">📚 Sementes do Conhecimento</a></li>
+                            <li><a class="dropdown-item" href="sementes_de_conhecimento/index.html">📚 Sementes de
+                                    Conhecimento</a></li>
                             <li><a class="dropdown-item" href="rede_de_raizes/index.html">🌱 Rede de Raízes</a></li>
-                            <li><a class="dropdown-item" href="colheita_de_oportunidades/index.html">💰 Colheita de Oportunidades</a></li>
+                            <li><a class="dropdown-item" href="colheita_de_oportunidades/index.html">💰 Colheita de
+                                    Oportunidades</a></li>
                         </ul>
                     </li>
 
@@ -66,35 +66,50 @@
     <!-- Principal conteúdo da página -->
     <main>
         <!-- Container do Carrossel -->
-        <div class="container-fluid px-0 my-5"> 
+        <div class="container-fluid px-0 my-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                 <!-- Indicadores (pontos na parte inferior) -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
 
                 <!-- Slides das imagens -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/home/slider/slide1.png" class="d-block w-100" alt="Plantações verdes com sol nascendo" loading="lazy">
+                        <img src="images/home/slider/slide1.png" class="d-block w-100"
+                            alt="Plantações verdes com sol nascendo" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/home/slider/slide2.png" class="d-block w-100" alt="Agricultor trabalhando no campo" loading="lazy">
+                        <img src="images/home/slider/slide2.png" class="d-block w-100"
+                            alt="Agricultor trabalhando no campo" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/home/slider/slide4.png" class="d-block w-100" alt="Tecnologia sendo aplicada na agricultura" loading="lazy">
+                        <img src="images/home/slider/slide4.png" class="d-block w-100"
+                            alt="Tecnologia sendo aplicada na agricultura" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <section id="sobre" class="py-5 bg-light">
             <div class="container text-center">
-                <h2 class="text-success mb-4">Nossa missão é <b>Combater a Fome</b> e ajudar pequenos produtores através do <b>Desenvolvimento Rural</b></h2>
-                <p class="lead mx-auto" style="max-width: 900px;">A Brotar Digital está comprometida com o Objetivo de Desenvolvimento Sustentável 2.3 da ONU, que visa dobrar a produtividade agrícola e a renda de pequenos produtores de alimentos, em particular as mulheres, povos indígenas, agricultores familiares, pastores e pescadores, incluindo através de acesso seguro e igualitário à terra, outros recursos produtivos e insumos, conhecimento, serviços financeiros, mercados e oportunidades para agregação de valor e empregos não-agrícolas. Acreditamos que a tecnologia e a colaboração são as chaves para um futuro onde ninguém passe fome.</p>
-                <p class="mx-auto" style="max-width: 900px;">Trabalhamos para criar um ecossistema de apoio e crescimento para as comunidades rurais, oferecendo ferramentas e conhecimentos que transformam desafios em oportunidades.</p>
+                <h2 class="text-success mb-4">Nossa missão é <b>Combater a Fome</b> e ajudar pequenos produtores através
+                    do <b>Desenvolvimento Rural</b></h2>
+                <p class="lead mx-auto" style="max-width: 900px;">A Brotar Digital está comprometida com o Objetivo de
+                    Desenvolvimento Sustentável 2.3 da ONU, que visa dobrar a produtividade agrícola e a renda de
+                    pequenos produtores de alimentos, em particular as mulheres, povos indígenas, agricultores
+                    familiares, pastores e pescadores, incluindo através de acesso seguro e igualitário à terra, outros
+                    recursos produtivos e insumos, conhecimento, serviços financeiros, mercados e oportunidades para
+                    agregação de valor e empregos não-agrícolas. Acreditamos que a tecnologia e a colaboração são as
+                    chaves para um futuro onde ninguém passe fome.</p>
+                <p class="mx-auto" style="max-width: 900px;">Trabalhamos para criar um ecossistema de apoio e
+                    crescimento para as comunidades rurais, oferecendo ferramentas e conhecimentos que transformam
+                    desafios em oportunidades.</p>
             </div>
         </section>
 
@@ -105,14 +120,17 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8">
                         <div class="ratio ratio-16x9 shadow-lg rounded">
-                            <iframe src="https://www.youtube.com/embed/q8Y0Ds2tIn4" title="YouTube video about sustainable agriculture" allowfullscreen loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/q8Y0Ds2tIn4"
+                                title="YouTube video about sustainable agriculture" allowfullscreen
+                                loading="lazy"></iframe>
                         </div>
-                        <p class="text-center text-muted mt-3 mb-0">Assista e entenda como estamos cultivando um futuro mais justo e próspero.</p>
+                        <p class="text-center text-muted mt-3 mb-0">Assista e entenda como estamos cultivando um futuro
+                            mais justo e próspero.</p>
                     </div>
                 </div>
             </div>
         </section>
-            
+
         <section id="programas" class="py-5 bg-light">
             <div class="container text-center">
                 <h2 class="text-success mb-5">Nossos Programas</h2>
@@ -121,7 +139,9 @@
                         <div class="card h-100 shadow-sm border-0">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title text-success mb-3">🌱 Rede de Raízes</h3>
-                                <p class="card-text flex-grow-1">Uma comunidade vibrante onde produtores e famílias rurais podem se conectar, compartilhar conhecimentos, experiências e oferecer ajuda mútua. Fortalecendo laços e cultivando o apoio entre todos.</p>
+                                <p class="card-text flex-grow-1">Uma comunidade vibrante onde produtores e famílias
+                                    rurais podem se conectar, compartilhar conhecimentos, experiências e oferecer ajuda
+                                    mútua. Fortalecendo laços e cultivando o apoio entre todos.</p>
                                 <a href="rede_de_raizes/index.html" class="btn btn-success mt-3">Saiba Mais</a>
                             </div>
                         </div>
@@ -130,24 +150,30 @@
                         <div class="card h-100 shadow-sm border-0">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title text-success mb-3">💰 Colheita de Oportunidades</h3>
-                                <p class="card-text flex-grow-1">Facilitamos o acesso a mercados, investidores e parcerias estratégicas. Criamos um ambiente propício para que pequenos produtores transformem seus produtos em negócios prósperos e sustentáveis.</p>
-                                <a href="colheita_de_oportunidades/index.html" class="btn btn-success mt-3">Saiba Mais</a>
+                                <p class="card-text flex-grow-1">Facilitamos o acesso a mercados, investidores e
+                                    parcerias estratégicas. Criamos um ambiente propício para que pequenos produtores
+                                    transformem seus produtos em negócios prósperos e sustentáveis.</p>
+                                <a href="colheita_de_oportunidades/index.html" class="btn btn-success mt-3">Saiba
+                                    Mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title text-success mb-3">📚 Sementes do Conhecimento</h3>
-                                <p class="card-text flex-grow-1">Nossa plataforma de ensino oferece cursos, workshops e materiais educativos acessíveis para agricultores e produtores. Capacitamos para novas técnicas, gestão e inovações no campo.</p>
-                                <a href="sementes_do_conhecimento/index.html" class="btn btn-success mt-3">Saiba Mais</a>
+                                <h3 class="card-title text-success mb-3">📚 Sementes de Conhecimento</h3>
+                                <p class="card-text flex-grow-1">Nossa plataforma de ensino oferece cursos, workshops e
+                                    materiais educativos acessíveis para agricultores e produtores. Capacitamos para
+                                    novas técnicas, gestão e inovações no campo.</p>
+                                <a href="sementes_de_conhecimento/index.html" class="btn btn-success mt-3">Saiba
+                                    Mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-                
+
         <!-- Seção da Nossa Equipe -->
         <section id="equipe" class="py-5 bg-white">
             <div class="container text-center">
@@ -156,7 +182,8 @@
                     <!-- Membro 1 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="images/home/alfredo-team1.png" class="card-img-top mx-auto" alt="Foto de Alfredo Hilário, Desenvolvedor Full Stack" loading="lazy">
+                            <img src="images/home/alfredo-team1.png" class="card-img-top mx-auto"
+                                alt="Foto de Alfredo Hilário, Desenvolvedor Full Stack" loading="lazy">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold text-success">Alfredo Hilário</h5>
                                 <p class="card-text text-muted">Desenvolvedor Full Stack - Brotar Digital</p>
@@ -166,17 +193,22 @@
                     <!-- Membro 2 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="images/home/alvaro-team2.png" class="card-img-top mx-auto" alt="Foto de Álvaro Piza, Especialista de Suporte e Desenvolvedor Full Stack" loading="lazy">
+                            <img src="images/home/alvaro-team2.png" class="card-img-top mx-auto"
+                                alt="Foto de Álvaro Piza, Especialista de Suporte e Desenvolvedor Full Stack"
+                                loading="lazy">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold text-success">Álvaro Piza</h5>
-                                <p class="card-text text-muted">Especialista de Suporte e Desenvolvedor Full Stack - Brotar Digital</p>
+                                <p class="card-text text-muted">Especialista de Suporte e Desenvolvedor Full Stack -
+                                    Brotar Digital</p>
                             </div>
                         </div>
                     </div>
                     <!-- Membro 3 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="images/home/julia-team3.jpeg" class="card-img-top mx-auto" alt="Foto de Julia Yokoo, Gerente de Projetos e Desenvolvedora Full Stack" loading="lazy">
+                            <img src="images/home/julia-team3.jpeg" class="card-img-top mx-auto"
+                                alt="Foto de Julia Yokoo, Gerente de Projetos e Desenvolvedora Full Stack"
+                                loading="lazy">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold text-success">Julia Yokoo</h5>
                                 <p class="card-text text-muted">Gerente de Projetos e Desenvolvedora Full Stack</p>
@@ -186,7 +218,9 @@
                     <!-- Membro 4 -->
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2-4">
                         <div class="card team-member-card h-100 shadow-sm">
-                            <img src="images/home/gabriel-team.png" class="card-img-top mx-auto" alt="Foto de Gabriel Baseggio, Gerente de Sistemas e Desenvolvedor de Software" loading="lazy">
+                            <img src="images/home/gabriel-team.png" class="card-img-top mx-auto"
+                                alt="Foto de Gabriel Baseggio, Gerente de Sistemas e Desenvolvedor de Software"
+                                loading="lazy">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold text-success">Gabriel Baseggio</h5>
                                 <p class="card-text text-muted">Gerente de Sistemas e Desenvolvedor de Software</p>
@@ -201,7 +235,9 @@
         <section class="bg-success text-white text-center py-5">
             <div class="container">
                 <h2 class="display-5 fw-bold mb-4">Junte-se à Brotar Digital e faça a diferença!</h2>
-                <p class="lead mb-4 mx-auto" style="max-width: 800px;">Seja parte da nossa comunidade, explore oportunidades ou adquira novos conhecimentos. Seu apoio é fundamental para construirmos um futuro mais justo e próspero.</p>
+                <p class="lead mb-4 mx-auto" style="max-width: 800px;">Seja parte da nossa comunidade, explore
+                    oportunidades ou adquira novos conhecimentos. Seu apoio é fundamental para construirmos um futuro
+                    mais justo e próspero.</p>
                 <a href="fale_conosco/index.html" class="btn btn-warning btn-lg shadow">Fale Conosco</a>
             </div>
         </section>
@@ -211,12 +247,16 @@
     <footer class="bg-dark text-white py-4">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <!-- Copyright dinâmico (opcional, requer JS) ou estático -->
-            <p class="mb-2 mb-md-0">&copy; <span id="currentYear">2025</span> Brotar Digital. Todos os direitos reservados.</p>
-            
+            <p class="mb-2 mb-md-0">&copy; <span id="currentYear">2025</span> Brotar Digital. Todos os direitos
+                reservados.</p>
+
             <div class="social-links-footer d-flex">
-                <a href="https://facebook.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/BrotarDigital"  class="text-white-50 mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/company/BrotarDigital"  class="text-white-50 mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <!-- Adicione mais redes sociais conforme necessário -->
             </div>
         </div>
@@ -224,10 +264,9 @@
     <!-- Fim do Rodapé Minimalista -->
 
     <!-- Bootstrap JS Bundle com Popper (SEMPRE no final do body para otimizar carregamento) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script para o ano dinâmico no rodapé (coloque abaixo do Bootstrap JS) -->
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+    <script src="./script/ano_atual.js" type="text/javascript"></script>
 </body>
+
 </html>
