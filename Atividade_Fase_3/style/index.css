@@ -1,7 +1,6 @@
 /* Ajustes básicos de corpo */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #015208;
 }
 
 /* Estilo para o logo na barra de navegação */
@@ -11,7 +10,7 @@ body {
 
 /* Carrossel de Imagens */
 .carousel-item {
-    height: 600px; /* Altura padrão para o carrossel */
+    height: 700px; /* Altura padrão para o carrossel */
     background-color: #777; /* Cor de fundo caso a imagem não carregue */
 }
 
