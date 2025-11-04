@@ -4,23 +4,12 @@
     height: 100px; /* Altura padrão para o logo na navbar */
 }
 
-.cards-grid {
-    display: grid;
-    gap: 3rem;
-}
-
 .cards-titles h2 {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid rgba(27,94,32,0.1);
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
 }
 
 .card {
