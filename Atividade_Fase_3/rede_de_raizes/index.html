@@ -12,8 +12,8 @@
     <!-- Font Awesome (Para ícones sociais) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <link rel="stylesheet" href="../style/rede_de_raizes.css">
-    
+    <link rel="stylesheet" href="../style/global.css">
+
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <img src="../images/logo.png" alt="Logo Brotar Digital" height="100%" loading="lazy">
+                <img src="../images/logo.png" alt="Logo Brotar Digital" height="100px" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,87 +65,95 @@
     <!-- Fim do cabeçalho -->
 
     <!-- Conteúdo principal -->
-    <main>
-        <!-- Título e subtítulo -->
-        <section class="container">
+    <main class="bg-secondary-subtle py-5 m-0">
+
+        <section class="container text-center text-md-start">
             <div>
-                <h1>Rede de Raízes</h1>
-                <p>Ninguém cresce sozinho. Este é o seu espaço para se conectar, tirar dúvidas, compartilhar sucessos e
+                <h1 class="text-success">Rede de Raízes</h1>
+                <p class="lead text-body-secondary">Ninguém cresce sozinho. Este é o seu espaço para se conectar, tirar
+                    dúvidas, compartilhar sucessos e
                     formar parcerias valiosas.</p>
             </div>
         </section>
 
-        <!-- Tópicos em destaque -->
-        <section class="container">
-            <div class="container-topicos">
-                <h3>Tópicos em destaque</h3>
+        <section class="container mt-4">
+            <div class="p-4 p-md-5 border rounded-3 bg-white d-flex flex-column align-items-center gap-3">
 
-                <!-- Card do tópico -->
-                <div class="card-topico">
-                    <div class="card-texto-principal">
-                        <h4>Manejo de pragas no cultivo orgânico</h4>
-                        <p>Compartilhando experiências e soluções naturais para controle de pragas em hortas orgânicas.
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="card-autor-info">
-                        <!-- Autor do tópico -->
-                        <div class="card-autor">
-                            <div class="card-autor-icon">MS</div>
-                            <p>Maria Silva</p>
+                <h3 class="align-self-start text-dark">Tópicos em destaque</h3>
+
+                <div class="card shadow-sm w-100">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title text-dark">Manejo de pragas no cultivo orgânico</h5>
+                            <p class="card-text text-body-secondary">Compartilhando experiências e soluções naturais
+                                para controle de pragas em hortas orgânicas.
+                            </p>
                         </div>
 
-                        <!-- Informações do tópico -->
-                        <div class="card-info">
-                            <p>5 respostas • Última há 10min</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-topico">
-                    <div class="card-texto-principal">
-                        <h4>Grupo de compra coletiva - Região sul</h4>
-                        <p>Organizando compra conjunta de insumos orgânicos para reduzir custos. Junte-se a nós!</p>
-                    </div>
-                    <hr>
-                    <div class="card-autor-info">
-                        <!-- Autor do tópico -->
-                        <div class="card-autor">
-                            <div class="card-autor-icon">JS</div>
-                            <p>João Santos</p>
-                        </div>
+                        <hr class="my-3">
 
-                        <!-- Informações do tópico -->
-                        <div class="card-info">
-                            <p>12 respostas • Última há 1h</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-topico">
-                    <div class="card-texto-principal">
-                        <h4>Certificação orgânica - Por onde começar?</h4>
-                        <p>Guia passo a passo para conseguir sua certificação orgânica. Dúvidas e experiências.</p>
-                    </div>
-                    <hr>
-                    <div class="card-autor-info">
-                        <!-- Autor do tópico -->
-                        <div class="card-autor">
-                            <div class="card-autor-icon">AC</div>
-                            <p>Ana Costa</p>
-                        </div>
+                        <div class="d-flex flex-wrap align-items-center gap-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 35px; aspect-ratio: 1/1; font-size: 0.8rem;">MS</div>
+                                <p class="mb-0 fw-medium">Maria Silva</p>
+                            </div>
 
-                        <!-- Informações do tópico -->
-                        <div class="card-info">
-                            <p>8 respostas • Última há 3h</p>
+                            <p class="mb-0 small text-body-secondary">5 respostas • Última há 10min</p>
                         </div>
                     </div>
                 </div>
 
-                <button>Iniciar nova discussão</button>
+                <div class="card shadow-sm w-100">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title text-dark">Grupo de compra coletiva - Região sul</h5>
+                            <p class="card-text text-body-secondary">Organizando compra conjunta de insumos orgânicos
+                                para reduzir custos. Junte-se a nós!</p>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex flex-wrap align-items-center gap-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 35px; aspect-ratio: 1/1; font-size: 0.8rem;">JS</div>
+                                <p class="mb-0 fw-medium">João Santos</p>
+                            </div>
+                            <p class="mb-0 small text-body-secondary">12 respostas • Última há 1h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm w-100">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title text-dark">Certificação orgânica - Por onde começar?</h5>
+                            <p class="card-text text-body-secondary">Guia passo a passo para conseguir sua certificação
+                                orgânica. Dúvidas e experiências.</p>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex flex-wrap align-items-center gap-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                                    style="width: 35px; aspect-ratio: 1/1; font-size: 0.8rem;">AC</div>
+                                <p class="mb-0 fw-medium">Ana Costa</p>
+                            </div>
+                            <p class="mb-0 small text-body-secondary">8 respostas • Última há 3h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success py-2 px-4 mt-2">Iniciar nova discussão</button>
 
             </div>
         </section>
 
     </main>
+
+
     <!-- Início do Rodapé Minimalista -->
     <footer class="bg-dark text-white py-4">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -153,12 +161,9 @@
             <div class="year-bdigital">&copy; <span id="currentYear">2025</span> Brotar Digital. Todos os direitos
                 reservados.</div>
             <div class="social-links-footer d-flex">
-                <a href="#" class="text-white-50 mx-2" aria-label="Facebook"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white-50 mx-2" aria-label="Instagram"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white-50 mx-2" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white-50 mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <!-- Adicione mais redes sociais conforme necessário -->
             </div>
         </div>
