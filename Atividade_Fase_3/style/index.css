@@ -1,12 +1,5 @@
-/* Ajustes básicos de corpo */
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+@import "global.css";
 
-/* Estilo para o logo na barra de navegação */
-.navbar-brand img {
-    height: 100px; /* Altura padrão para o logo na navbar */
-}
 
 /* Carrossel de Imagens */
 .carousel-item {
@@ -58,11 +51,3 @@ body {
         width: 20%;
     }
 }
-
-.header {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0%;
-
-}
-

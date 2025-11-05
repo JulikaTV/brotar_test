@@ -1,0 +1,11 @@
+@import "global.css";
+
+.card-topico {
+    background-color: var(--background-color);
+}
+
+.card-topico:hover {
+    background-color: var(--card-bg);
+    transform: scale(1.01);
+    cursor: pointer;
+}

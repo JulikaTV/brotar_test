@@ -29,3 +29,7 @@ body {
     font-weight: 500;
     font-family: var(--font-family);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color) !important;
+}
