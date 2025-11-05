@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- Custom CSS (DEPOIS do Bootstrap para garantir que suas regras sobrescrevam) -->
-    <link rel="stylesheet" href="../style/fale_conosco.css">
+    <link rel="stylesheet" href="../style/global.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -22,7 +22,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <img src="../images/logo.png" alt="Logo Brotar Digital" height="100%" loading="lazy">
+                <img src="../images/logo.png" alt="Logo Brotar Digital" height="100px" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
     <main class="flex-grow-1 main-content-bg py-5">
         <div class="container text-center text-white mb-5">
             <h1 class="display-4 fw-bold">Conecte-se à Agricultura Familiar</h1>
-            <p class="lead">Estamos aqui para te apoiar, entre em contato com nossos especialistas através do formulário
+            <p class="lead text-black">Estamos aqui para te apoiar, entre em contato com nossos especialistas através do formulário
                 abaixo.</p>
         </div>
 
@@ -86,7 +86,8 @@
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone (com DDD):</label>
                         <input type="tel" class="form-control" id="telefone" name="telefone"
-                            placeholder="Ex: 11 98765-4321">
+                            placeholder="Ex: 11 98765-4321" pattern="(\(?\d{2}\)?\s?)(\d{4,5}-?\d{4})"
+                            required>
                     </div>
 
                     <div class="mb-3">

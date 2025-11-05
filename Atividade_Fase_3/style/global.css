@@ -1,5 +1,4 @@
-@import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800;900&display=swap");
 
 /* Variáveis reutilizáveis globalmente */
 
@@ -31,61 +30,6 @@ body {
     font-family: var(--font-family);
 }
 
-main {
-    margin: 2rem;
-    padding: 0 2rem;
-}
-
-/* Define a cor e espessura da fonte para títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-h3 {
-    font-size: 28px;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-/* Define a cor para textos e links */
-p, a {
-    font-size: 16px;
-    color: var(--text-color);
-}
-
-/* Remove o sublinhado dos links */
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent-color);
-} 
-
-button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 16px 32px;
-    cursor: pointer;
-    border-radius: var(--radius);
-    border: none;
-}
-
-button:hover {
-    background: var(--secondary-color);
-    transform: scale(1.01);
-}
-
-
-/* Classes que podem ser reutilizadas */
-
-/* Classe para as sections terem um tamanho padrão */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px 16px;
+    color: var(--primary-color) !important;
 }
