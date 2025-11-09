@@ -21,8 +21,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-    // Opcional: Você pode adicionar lógica aqui quando o player estiver pronto
-    // console.log("Player is ready:", event.target.a.id);
+
 }
 
 // Lógica para pausar/tocar o vídeo ao abrir/fechar o modal
