@@ -1,0 +1,53 @@
+@import "global.css";
+
+
+/* Carrossel de Imagens */
+.carousel-item {
+    height: 700px; /* Altura padrão para o carrossel */
+    background-color: #777; /* Cor de fundo caso a imagem não carregue */
+}
+
+.carousel-item img {
+    height: 100%;       /* A imagem preenche a altura do seu container */
+    object-fit: cover;  /* Garante que a imagem cubra a área, cortando se necessário, mantendo proporção */
+    width: 100%;        /* Garante que a imagem ocupe toda a largura disponível */
+    display: block;     /* Remove espaçamento extra que navegadores podem adicionar a imagens */
+}
+
+/* Carrossel: Altura ainda mais compacta em dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 250px;
+    }
+    .navbar-brand img {
+         height: 40px; /* Um pouco menor para mobile */
+    }
+}
+
+/* Seção da Equipe */
+.team-member-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-member-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1.5rem auto 1rem auto;
+    border: 3px solid #28a745;
+}
+
+/* Coluna customizada para 5 itens em uma linha em telas grandes (lg e acima) */
+@media (min-width: 992px) {
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}

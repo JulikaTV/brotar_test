@@ -21,8 +21,9 @@ function isFormDataCorrect() {
     let errorDetails = document.getElementById("errorDetails");
 
     let nomeCompleto = document.getElementById("nomeCompleto");
-    if (nomeCompleto.value.trim().length < 2) {
-        errorDetails.innerHTML = "O campo de nome completo deve ter no mínimo 2 caracteres!";
+    let [nome, sobrenome] = nomeCompleto.value.trim().split(" ");
+    if (!nome || nome.length < 2 || !sobrenome || sobrenome.length < 2) {
+        errorDetails.innerHTML = "O campo de nome completo deve ser composto por nome e sobrenome, ambos contendo no mínimo 2 caracteres!";
         return false;
     }
 
